@@ -82,6 +82,6 @@ $(document).ready(function() {
     });
 
     $.get("api/faucet/logs", (data) => {
-        console.log(data);
+       // console.log(data);
     });
 });
