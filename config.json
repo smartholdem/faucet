@@ -1,11 +1,11 @@
 {
     "node": "127.0.0.1",
-    "port": 8088,
-    "payPerClick": 0.05,
+    "port": 8082,
+    "payPerClick": 0.15,
     "cooldown": 3600,
     "paySchedule": "0 01 0 * * *",
-    "payMinimum": 1.1,
-    "txFee": 0.1,
+    "payMinimum": 1.10,
+    "txFee": 0.10,
     "log": "tx.log",
     "database": {
         "username": "fauset",
