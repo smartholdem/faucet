@@ -1,6 +1,6 @@
 {
-    "node": "127.0.0.1", //node ip
-    "port": 8082, //The port the web server will listen on
+    "node": "127.0.0.1", //The IP address of the SmartHoldem node the backend will use to query SmartHoldem's blockchain
+  "port": 8082, //The port the web server will listen on
     "payPerClick": 0.15, // How much STH to credit users per use of the faucet
     "cooldown": 30, // How long users have to wait before using the faucet again (in seconds)
     "paySchedule": "0 01 0 * * *", // When the faucet automatically pays out, in cron format
