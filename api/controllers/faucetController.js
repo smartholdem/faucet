@@ -25,7 +25,7 @@ var timeDiff = (now, lastRollTime, cooldown) => {
 exports.useFaucet = (req, res) => {
     var address = req.body.address;
     if(!util.isAddress(address))
-        return util.reject(res, "400", "Invalid STH address");
+        return util.reject(res, "400", "Invalid STH address".address);
 
     recaptcha.verify(req, (err, data) => {
         if(!err)
