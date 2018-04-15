@@ -25,6 +25,7 @@ var addr;
 var captchaResp;
 var onCaptchaSolve = (resp) => {
     addr = $("#address").val();
+    console.log(addr);
     captchaResp = resp;
 }
 
