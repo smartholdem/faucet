@@ -63,7 +63,7 @@ $(document).ready(function() {
             }
 
             console.log("html addr:"+addr);
-            $.post("api/faucet", {"address": addr, "g-recaptcha-response": captchaResp}, (resp) => {
+            $.post("http://faucet.smartholdem.io/api/faucet", {"address": addr, "g-recaptcha-response": captchaResp}, (resp) => {
                 error.addClass("hidden");
                 success.html(`${info.payPerClick} STH added to your account!`);
                 success.removeClass("hidden");
