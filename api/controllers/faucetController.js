@@ -107,8 +107,6 @@ exports.getInfo = (req, res) => {
         payPerClick: PAY_PER_CLICK,
         cooldown: COOLDOWN
     };
-
-    console.log("faucetInfo:"+faucetInfo);
     res.send(faucetInfo);
 };
 
