@@ -1,5 +1,5 @@
 {
-    "node": "88.198.67.196",
+    "node": "127.0.0.1",
     "port": 8088,
     "payPerClick": 0.05,
     "cooldown": 3600,
@@ -8,7 +8,7 @@
     "txFee": 0.1,
     "log": "tx.log",
     "database": {
-        "username": "faucet",
+        "username": "fauset",
         "password": "developer"
     },
     "recaptcha": {
