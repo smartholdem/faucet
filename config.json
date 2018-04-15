@@ -4,7 +4,7 @@
     "payPerClick": 0.15,
     "cooldown": 3600,
     "paySchedule": "0 01 0 * * *",
-    "payMinimum": 1.10,
+    "payMinimum": 0.30,
     "txFee": 0.10,
     "log": "tx.log",
     "database": {
