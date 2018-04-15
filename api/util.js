@@ -2,7 +2,7 @@
 var BigNumber = require("bignumber.js");
 var fs = require("fs");
 
-var alphanumRegex = /^[a-zA-Z0-9]+$/i;
+var alphanumRegex = /^[1-9A-Za-z]+$/g;
 
 exports.reject = (res, status, msg) => {
     console.log(`Rejected: ${status} - ${msg}`);
