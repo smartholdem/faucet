@@ -64,7 +64,7 @@ $(document).ready(function() {
 
             addr ='Sa9JKodiNeM7tbYjxwEhvvG1kBczhQxTN3'; //test addr
             console.log("htmlAddr:"+addr);
-            $.post("api/faucet", {"address": addr, "g-recaptcha-response": captchaResp}, (resp) => {
+            $.post("/api/faucet", {"address": addr, "g-recaptcha-response": captchaResp}, (resp) => {
                 error.addClass("hidden");
                 success.html(`${info.payPerClick} STH added to your account!`);
                 success.removeClass("hidden");
