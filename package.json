@@ -1,0 +1,32 @@
+{
+  "name": "SmartHoldemFaucet",
+  "version": "1.0.0",
+  "description": "SmartHoldem Faucet",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "bignumber.js": "^4.0.2",
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.3",
+    "express-recaptcha": "^3.0.0",
+    "moment": "^2.18.1",
+    "mysql": "^2.13.0",
+    "nconf": "^0.8.5",
+    "node-schedule": "^1.2.5",
+    "request": "^2.81.0",
+    "sth-api": "git+https://github.com/smartholdem/sthjs-wrapper.git",
+    "sthjs": "git+https://github.com/smartholdem/sth-js.git",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartholdem/faucet.git"
+  },
+  "author": "",
+  "license": "MIT"
+}
