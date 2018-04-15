@@ -32,7 +32,7 @@ exports.useFaucet = (req, res) => {
     recaptcha.verify(req, (err, data) => {
         if(!err)
         {
-            var IP = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+            var IP = req.headers['x-forwarded-for'];
             console.log(IP);
             var now = moment();
 
