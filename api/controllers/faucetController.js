@@ -30,7 +30,7 @@ exports.useFaucet = (req, res) => {
 	  //  return util.reject(res, "400", "Invalid STH address");
     }
 
-    /*
+
     recaptcha.verify(req, (err, data) => {
         if(!err)
         {
@@ -117,8 +117,7 @@ exports.getRecentLogs = (req, res) => {
         res.send(logs);
     });
 };
-/*
+
 exports.getCaptcha = (req, res) => {
     res.send({ captcha: recaptcha.render() });
 };
-*/

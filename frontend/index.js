@@ -32,7 +32,7 @@ $(document).ready(function() {
     var submitContainer = $("#submitContainer");
     var success = $("#success");
     var error = $("#error");
-    // var captcha = $("#captcha");
+    var captcha = $("#captcha");
 
     $.get("api/faucet", (info) => {
         $("#addr").html(info.address);
@@ -55,8 +55,7 @@ $(document).ready(function() {
         });
 
         $("#submit").click(() => {
-            //if(addr == null || captchaResp == null)
-            if(addr == null)
+            if(addr == null || captchaResp == null)
             {
                 error.html("Please enter a valid STH address and solve the captcha");
                 error.removeClass("hidden");
@@ -65,8 +64,7 @@ $(document).ready(function() {
 
             addr ='Sa9JKodiNeM7tbYjxwEhvvG1kBczhQxTN3'; //test addr
             console.log("htmlAddr:"+addr);
-            // $.post("api/faucet", {"address": addr, "g-recaptcha-response": captchaResp}, (resp) => {
-            $.post("api/faucet", {"address": addr}, (resp) => {
+            $.post("api/faucet", {"address": addr, "g-recaptcha-response": captchaResp}, (resp) => {
                 error.addClass("hidden");
                 success.html(`${info.payPerClick} STH added to your account!`);
                 success.removeClass("hidden");
@@ -79,13 +77,12 @@ $(document).ready(function() {
         });
     });
 
-    /*
     $.get("api/faucet/captcha", (resp) => {
         var captchaHtml = $($.parseHTML(resp.captcha, null, true));
         captchaHtml.attr("data-callback", "onCaptchaSolve");
         captcha.html(captchaHtml);
     });
-*/
+
     $.get("api/faucet/logs", (data) => {
        // console.log(data);
     });
