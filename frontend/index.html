@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="index.css" rel="stylesheet">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default" id="header">
+            <img class="logo" src="img/logo.png">
+        </nav>
+        <div id="headerBar">
+            <div id="emptyBar"></div>
+            <div id="headerMsg">Made with <span class="glyphicon glyphicon-heart"></span> by <a href="https://faucet.smartholdem.io">SmartTeam</a></div>
+        </div>
+
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">Faucet Info</div>
+                <div class="row panel-body">
+                    <div class="col-md-4"><b>Address:</b> <span id="addr"></span></div>
+                    <div class="col-md-4"><b>Pay Per Click:</b> <span id="ppc"></span></div>
+                    <div class="col-md-4"><b>Cooldown:</b> <span id="cooldown"></span></div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="alert alert-success hidden" role="alert" id="success"></div>
+                    <div class="alert alert-danger hidden" role="alert" id="error"></div>
+                    <h3>Enter your STH address below and solve the captcha to collect from the faucet!</h3>
+                    <div class="form-group" id="addressContainer">
+                        <label for="address">STH Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="Address">
+                    </div>
+                    <br />
+                    <div id="submitContainer" class="hidden">
+                        <div id="captcha">
+                        </div>
+                        <br />
+                        <button type="button" class="btn btn-info" id="submit">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
