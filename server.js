@@ -7,7 +7,7 @@ var bodyParser = require("body-parser")
 var mysql = require("mysql");
 var nconf = require("nconf");
 var payout = require("./payout");
-var Recaptcha = require("express-recaptcha");
+// var Recaptcha = require("express-recaptcha");
 var app = express();
 app.use(express.static("./frontend"));
 app.use(cookieParser());
@@ -33,7 +33,7 @@ if(!PASSPHRASE)
     process.exit(1);
 }
 
-recaptcha = new Recaptcha(nconf.get("recaptcha:siteKey"), nconf.get("recaptcha:secretKey"));
+// recaptcha = new Recaptcha(nconf.get("recaptcha:siteKey"), nconf.get("recaptcha:secretKey"));
 
 const PUB_KEY = sth.crypto.getKeys(PASSPHRASE).publicKey;
 FAUCET_ADDR = sth.crypto.getAddress(PUB_KEY);

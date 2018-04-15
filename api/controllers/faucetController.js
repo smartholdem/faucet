@@ -29,6 +29,8 @@ exports.useFaucet = (req, res) => {
     if(!util.isAddress(address)) {
 	  //  return util.reject(res, "400", "Invalid STH address");
     }
+
+    /*
     recaptcha.verify(req, (err, data) => {
         if(!err)
         {
@@ -80,6 +82,7 @@ exports.useFaucet = (req, res) => {
         else
             util.reject(res, "403", "reCaptcha verification failed");
     })
+    */
 };
 
 exports.getStatus = (req, res) => {
@@ -114,7 +117,8 @@ exports.getRecentLogs = (req, res) => {
         res.send(logs);
     });
 };
-
+/*
 exports.getCaptcha = (req, res) => {
     res.send({ captcha: recaptcha.render() });
 };
+*/
