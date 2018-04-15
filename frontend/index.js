@@ -32,7 +32,7 @@ $(document).ready(function() {
     var submitContainer = $("#submitContainer");
     var success = $("#success");
     var error = $("#error");
-    var captcha = $("#captcha");
+    // var captcha = $("#captcha");
 
     $.get("api/faucet", (info) => {
         $("#addr").html(info.address);
