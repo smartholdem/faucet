@@ -15,7 +15,6 @@ exports.reject = (res, status, msg) => {
 }
 
 exports.isAddress = (addr) => {
-    console.log(addr);
     console.log(alphanumRegex.test(addr));
     console.log(addr.length);
     console.log(addr.charAt(0));
