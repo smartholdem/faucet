@@ -80,7 +80,8 @@ exports.useFaucet = (req, res) => {
 };
 
 exports.getStatus = (req, res) => {
-    var IP = "12345"; //req.connection.remoteAddress;
+    var IP = req.connection.remoteAddress;
+    return res.send({canRoll: true});
     repo.getRollTimeByIp(IP).then((resp) => {
         if(resp.length == 0)
             return res.send({canRoll: true});
