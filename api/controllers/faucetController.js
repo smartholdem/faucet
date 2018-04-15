@@ -108,7 +108,7 @@ exports.getInfo = (req, res) => {
         cooldown: COOLDOWN
     };
 
-    console.log(faucetInfo);
+    console.log("faucetInfo:"+faucetInfo);
     res.send(faucetInfo);
 };
 
