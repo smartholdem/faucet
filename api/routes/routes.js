@@ -12,7 +12,8 @@ module.exports = function(app) {
 
     app.route("/api/faucet/logs")
         .get(faucet.getRecentLogs);
-
+/*
     app.route("/api/faucet/captcha")
         .get(faucet.getCaptcha);
+        */
 };
