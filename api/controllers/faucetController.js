@@ -27,7 +27,7 @@ exports.useFaucet = (req, res) => {
     console.log("post address:"+address);
     console.log("isaddr:"+util.isAddress(address));
     if(!util.isAddress(address)) {
-	  //  return util.reject(res, "400", "Invalid STH address");
+	    return util.reject(res, "400", "Invalid STH address");
     }
 
 
@@ -82,7 +82,7 @@ exports.useFaucet = (req, res) => {
         else
             util.reject(res, "403", "reCaptcha verification failed");
     })
-    */
+
 };
 
 exports.getStatus = (req, res) => {
