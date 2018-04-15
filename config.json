@@ -1,18 +1,18 @@
 {
-    "node": "127.0.0.1",
-    "port": 8082,
-    "payPerClick": 0.15,
-    "cooldown": 3600,
-    "paySchedule": "0 01 0 * * *",
-    "payMinimum": 1.10,
-    "txFee": 0.10,
-    "log": "tx.log",
+    "node": "127.0.0.1", //node ip
+    "port": 8082, //The port the web server will listen on
+    "payPerClick": 0.15, // How much STH to credit users per use of the faucet
+    "cooldown": 30, // How long users have to wait before using the faucet again (in seconds)
+    "paySchedule": "0 01 0 * * *", // When the faucet automatically pays out, in cron format
+    "payMinimum": 1.10, // The minimum balance users must accrue before they are paid out
+    "txFee": 0.10, // The transaction fee to be subtracted from users' payouts. Set to 0 if you want to pay their transaction fees.
+    "log": "tx.log", // Filename of log file
     "database": {
-        "username": "fauset",
-        "password": "developer"
+        "username": "fauset", // MySQL username
+      "password": "developer" //MySQL password
     },
-    "recaptcha": {
-        "siteKey": "",
-        "secretKey": ""
+    "recaptcha": { // https://www.google.com/recaptcha/admin#list
+        "siteKey": "", //ReCaptcha site key
+      "secretKey": "" // ReCaptcha secret key
     }
 }
