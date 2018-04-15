@@ -31,6 +31,7 @@ exports.useFaucet = (req, res) => {
         if(!err)
         {
             var IP = req.connection.remoteAddress;
+            console.log(IP);
             var now = moment();
 
             smartholdemApi.getBalance(FAUCET_ADDR, (err, succ, resp) => {
