@@ -26,7 +26,7 @@ exports.useFaucet = (req, res) => {
     var address = req.body.address;
     console.log("post address:"+address);
     console.log("isaddr:"+util.isAddress(address));
-    if(!util.isAddress(address)) {
+    if(util.isAddress(address)!== true) {
 	    return util.reject(res, "400", "Invalid STH address");
     }
     recaptcha.verify(req, (err, data) => {

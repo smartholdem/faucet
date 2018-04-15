@@ -62,7 +62,7 @@ $(document).ready(function() {
                 return;
             }
 
-            addr ='Sa9JKodiNeM7tbYjxwEhvvG1kBczhQxTN3';
+            addr ='Sa9JKodiNeM7tbYjxwEhvvG1kBczhQxTN3'; //test addr
             console.log("htmlAddr:"+addr);
             $.post("api/faucet", {"address": addr, "g-recaptcha-response": captchaResp}, (resp) => {
                 error.addClass("hidden");

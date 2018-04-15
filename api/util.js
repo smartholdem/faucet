@@ -15,10 +15,6 @@ exports.reject = (res, status, msg) => {
 }
 
 exports.isAddress = (addr) => {
-    //console.log(alphanumRegex.test(addr));
-    //console.log(addr.length);
-    //console.log(addr.charAt(0));
-
     return alphanumRegex.test(addr); // && addr.length == 34 && addr.charAt(0) == 'S'
 };
 
