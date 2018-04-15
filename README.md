@@ -2,4 +2,4 @@
 
 > npm install
 
-> node server --pass "Your Faucet Passphrase"
+> node server --pass "Your Faucet Address Passphrase"
