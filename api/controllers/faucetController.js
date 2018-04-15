@@ -24,6 +24,7 @@ var timeDiff = (now, lastRollTime, cooldown) => {
 
 exports.useFaucet = (req, res) => {
     var address = req.body.address;
+    console.log("post address:"+address);
     if(!util.isAddress(address))
         return util.reject(res, "400", "Invalid STH address");
 
