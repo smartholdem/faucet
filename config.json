@@ -1,0 +1,18 @@
+{
+    "node": "88.198.67.196",
+    "port": 8088,
+    "payPerClick": 0.05,
+    "cooldown": 3600,
+    "paySchedule": "0 01 0 * * *",
+    "payMinimum": 1.1,
+    "txFee": 0.1,
+    "log": "tx.log",
+    "database": {
+        "username": "faucet",
+        "password": "developer"
+    },
+    "recaptcha": {
+        "siteKey": "",
+        "secretKey": ""
+    }
+}
