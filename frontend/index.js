@@ -1,6 +1,3 @@
-(function($) {
-'use strict';
-
 var getRemainingTime = (seconds) => {
     var minutes = Math.floor(seconds / 60);
     var seconds = seconds - (minutes * 60);
@@ -24,12 +21,16 @@ var startCountdown = (container, remainingCooldown) => {
     }, 1000);
 }
 
-var addr = $("#address").val();
+(function($) {
+    'use strict';
+
+var addr = '';
 var captchaResp;
 var onCaptchaSolve = (resp) => {
     addr = $("#address").val();
     captchaResp = resp;
 }
+
 
 $(document).ready(function() {
     var submitContainer = $("#submitContainer");
