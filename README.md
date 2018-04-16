@@ -23,7 +23,11 @@ file config.json
 ```shell
 sudo apt-get install mysql-server
 sudo apt-get install mysql-client
+```
 
+> import sql from /DataModel/db.sql
+
+```shell
 git clone https://github.com/smartholdem/faucet.git
 cd faucet
 npm install
