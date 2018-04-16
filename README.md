@@ -1,11 +1,13 @@
 # SmartHoldem Faucet
 
+[![Wallet Releases](https://github.com/smartholdem/smartmedia/blob/master/mediakit/sh_faucet.jpg)](https://faucet.smartholdem.io/)
+
 ## Params
 
 file config.json
 
 - node - The IP address of the SmartHoldem node the backend will use to query SmartHoldem's blockchain
-- port - The port the web server will listen on
+- port - The port the web server will listen on (default 8082)
 - payPerClick - How much SmartHoldem to credit users per use of the faucet
 - cooldown - How long users have to wait before using the faucet again (in seconds)
 - paySchedule - When the faucet automatically pays out, in cron format https://github.com/node-schedule/node-schedule
@@ -14,10 +16,17 @@ file config.json
 - log - Filename of log file
 - database:username - MySQL username
 - database:password - MySQL password
-- recaptcha:siteKey - ReCaptcha site key
-- recaptcha:secretKey - ReCaptcha secret key
+- recaptcha:siteKey - ReCaptcha site key https://www.google.com/recaptcha/admin?hl=ru
+- recaptcha:secretKey - ReCaptcha secret key https://www.google.com/recaptcha/admin?hl=ru
 
 ## Installation
+```shell
+sudo apt-get install mysql-server
+sudo apt-get install mysql-client
 
-> npm install
-> node server --pass "Your Faucet Address Passphrase"
+git clone https://github.com/smartholdem/faucet.git
+cd faucet
+npm install
+node server --pass "Your Faucet Address Passphrase"
+```
+open http://server_ip:8082
