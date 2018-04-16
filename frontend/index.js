@@ -59,6 +59,7 @@ $(document).ready(function() {
         });
 
         $("#submit").click(() => {
+            addr = $("#address").val();
             if(addr == null || captchaResp == null)
             {
                 error.html("Please enter a valid STH address and solve the captcha");
