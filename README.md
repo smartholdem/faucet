@@ -24,7 +24,7 @@ file config.json
 sudo apt-get install mysql-server
 sudo apt-get install mysql-client
 ```
-
+> create sqldb *faucet*
 > import sql from /DataModel/db.sql
 
 ```shell
