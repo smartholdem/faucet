@@ -1,3 +1,5 @@
+'use strict';
+
 var getRemainingTime = (seconds) => {
     var minutes = Math.floor(seconds / 60);
     var seconds = seconds - (minutes * 60);
