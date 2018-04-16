@@ -21,7 +21,7 @@ var startCountdown = (container, remainingCooldown) => {
     }, 1000);
 }
 
-var addr;
+var addr = $("#address").val();
 var captchaResp;
 var onCaptchaSolve = (resp) => {
     addr = $("#address").val();
