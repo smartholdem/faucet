@@ -21,8 +21,7 @@ var startCountdown = (container, remainingCooldown) => {
     }, 1000);
 }
 
-(function($) {
-    'use strict';
+//(function($) { 'use strict';
 
 var addr = '';
 var captchaResp;
@@ -92,4 +91,4 @@ $(document).ready(function() {
      // console.log(data);
     });
 });
-}).apply(this, [jQuery]);
+//}).apply(this, [jQuery]);
