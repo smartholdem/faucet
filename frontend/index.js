@@ -1,3 +1,4 @@
+(function($) {
 'use strict';
 
 var getRemainingTime = (seconds) => {
@@ -89,3 +90,4 @@ $(document).ready(function() {
      // console.log(data);
     });
 });
+}).apply(this, [jQuery]);
