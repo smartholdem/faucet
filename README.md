@@ -31,7 +31,7 @@ sudo apt-get install mysql-client
 git clone https://github.com/smartholdem/faucet.git
 cd faucet
 npm install
-node server --pass "Your Faucet Address Passphrase"
+node server --pass "Your Faucet Address Passphrase" or forever start server.js --pass "Your Faucet Address Passphrase"
 ```
 open http://server_ip:8082
 
