@@ -34,3 +34,27 @@ npm install
 node server --pass "Your Faucet Address Passphrase"
 ```
 open http://server_ip:8082
+
+## Nginx config example
+
+```shell
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name faucet.smartholdem.io;
+
+    location / {
+    proxy_pass http://localhost:8082;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_set_header Host $host;
+    proxy_cache_bypass $http_upgrade;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $remote_addr;
+    add_header Cache-Control no-cache;
+    expires 1800s;
+    }
+}
+```
