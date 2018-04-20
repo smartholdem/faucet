@@ -33,7 +33,13 @@ sudo apt-get install mysql-server
 sudo apt-get install mysql-client
 ```
 
-> create mysqldb name *faucet*
+### create mysqldb name *faucet*
+
+```shell
+mysql -u root -p
+CREATE DATABASE faucet;
+```
+
 > import mysql from /DataModel/db.sql
 
 ```shell
