@@ -39,6 +39,7 @@ sudo apt-get install mysql-client
 mysql -u root -p
 CREATE DATABASE faucet;
 SHOW DATABASES;
+exit
 ```
 
 ### import mysql from /DataModel/db.sql
@@ -53,6 +54,12 @@ npm install
 node server --pass "Your Faucet Address Passphrase" or forever start server.js --pass "Your Faucet Address Passphrase"
 ```
 open http://server_ip:8082
+
+### Edit config.json
+```shell
+nano config.json
+```
+
 
 ## Nginx config example
 
