@@ -1,4 +1,4 @@
-# SmartHoldem Faucet
+# SmartHoldem Faucet Devnet
 
 [![Wallet Releases](https://github.com/smartholdem/smartmedia/blob/master/mediakit/sh_faucet.jpg)](https://faucet.smartholdem.io/)
 
