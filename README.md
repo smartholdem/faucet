@@ -43,7 +43,7 @@ SHOW DATABASES;
 
 ### import mysql from /DataModel/db.sql
 ```shell
-mysql -u username -p database_name < db.sql
+mysql -u username -p faucet < /home/<user>/faucet/DataModel/db.sql
 ```
 
 ```shell
