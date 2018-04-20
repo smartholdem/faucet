@@ -1,7 +1,7 @@
 {
-  "name": "SmartHoldemFaucet",
+  "name": "SmartHoldemFaucetDevNet",
   "version": "1.0.0",
-  "description": "SmartHoldem Faucet",
+  "description": "SmartHoldem Faucet Devnet",
   "main": "index.js",
   "dependencies": {
     "bcrypt": "^1.0.2",
