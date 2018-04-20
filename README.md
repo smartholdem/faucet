@@ -20,10 +20,19 @@ file config.json
 - recaptcha:secretKey - ReCaptcha secret key https://www.google.com/recaptcha/admin?hl=ru
 
 ## Installation
+
+### Nginx if it is needed
+```shell
+sudo apt-get update
+sudo apt-get install nginx
+```
+
+### MySql if it is needed
 ```shell
 sudo apt-get install mysql-server
 sudo apt-get install mysql-client
 ```
+
 > create mysqldb name *faucet*
 > import mysql from /DataModel/db.sql
 
