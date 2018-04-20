@@ -46,6 +46,11 @@ SHOW DATABASES;
 mysql -u username -p faucet < /home/<user>/faucet/DataModel/db.sql
 ```
 
+or
+```shell
+shell> mysql db_name < backup-file.sql
+```
+
 ```shell
 git clone https://github.com/smartholdem/faucet.git
 cd faucet
