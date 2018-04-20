@@ -38,9 +38,13 @@ sudo apt-get install mysql-client
 ```shell
 mysql -u root -p
 CREATE DATABASE faucet;
+SHOW DATABASES;
 ```
 
-> import mysql from /DataModel/db.sql
+### import mysql from /DataModel/db.sql
+```shell
+mysql -u username -p database_name < db.sql
+```
 
 ```shell
 git clone https://github.com/smartholdem/faucet.git
