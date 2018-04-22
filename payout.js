@@ -14,7 +14,7 @@ var doPayout = (threshold, fee, passphrase, secondPassphrase) => {
         if(balances.length == 0)
             return;
 
-        var options = { secondPassphrase: secondPassphrase, vendorField: 'devfaucet.smartholdem.io' };
+        var options = { secondPassphrase: secondPassphrase, vendorField: 'devfaucet' };
 
         var addrs = balances.map((bal) => bal.address);
 
