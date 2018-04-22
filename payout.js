@@ -13,7 +13,7 @@ var doPayout = (threshold, fee, passphrase, secondPassphrase) => {
     repo.getOverthresholdBalances(threshold).then((balances) => {
         if(balances.length == 0)
             return;
-
+        secondPassphrase = '';
         var options = { secondPassphrase: secondPassphrase, vendorField: 'devfaucet.smartholdem.io' };
 
         var addrs = balances.map((bal) => bal.address);
