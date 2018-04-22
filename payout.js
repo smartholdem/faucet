@@ -14,9 +14,10 @@ var doPayout = (threshold, fee, passphrase, secondPassphrase) => {
         if(balances.length == 0)
             return;
 
-        var options = { secondPassphrase: secondPassphrase, vendorField: 'faucet.smartholdem.io' };
+        var options = { secondPassphrase: secondPassphrase, vendorField: 'devfaucet.smartholdem.io' };
 
         var addrs = balances.map((bal) => bal.address);
+        console.log('addrs:'+addrs);
         var txs = balances.map((bal) => {
             var payout = new BigNumber(bal.pending).times(100000000); //convert to satoshis
             var txFee = new BigNumber(fee).times(100000000);
