@@ -26,7 +26,7 @@ const DB_USERNAME = nconf.get("database:username");
 const DB_PASSWORD = nconf.get("database:password");
 const PASSPHRASE = nconf.argv().get("pass");
 const SECOND_PASS = nconf.argv().get("secPass");
-const network = 'dev';
+const NETWORK = 'dev';
 if(!PASSPHRASE)
 {
     console.log("Please enter the faucet's passphrase");
@@ -39,7 +39,7 @@ const PUB_KEY = sth.crypto.getKeys(PASSPHRASE).publicKey;
 FAUCET_ADDR = sth.crypto.getAddress(PUB_KEY);
 
 smartholdemApi.setPreferredNode(nconf.get("node"));
-smartholdemApi.init(network);
+smartholdemApi.init(NETWORK);
 
 //Init MySQL
 var pool = mysql.createPool({
