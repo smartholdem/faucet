@@ -13,7 +13,7 @@ var doPayout = (threshold, fee, passphrase, secondPassphrase) => {
     repo.getOverthresholdBalances(threshold).then((balances) => {
         if(balances.length == 0)
             return;
-        secondPassphrase = '';
+
         var options = { secondPassphrase: secondPassphrase, vendorField: 'devfaucet.smartholdem.io' };
 
         var addrs = balances.map((bal) => bal.address);
@@ -23,7 +23,7 @@ var doPayout = (threshold, fee, passphrase, secondPassphrase) => {
             var txFee = new BigNumber(fee).times(100000000);
             payout = payout.minus(txFee);
 
-            console.log(passphrase, bal.address, payout.toNumber(), options);
+            console.log(bal.address, payout.toNumber());
             var tx = smartholdemApi.createTransaction(passphrase, bal.address, payout.toNumber(), options);
             console.log("tx:"+tx);
             var logMsg = bal.address + " " + parseFloat(bal.pending) + " " + tx.id;
