@@ -13,7 +13,7 @@ var createLog = (IP, address, amount, rollTime) => {
         rollTime: rollTime
     };
 
-    console.log(`[${rollTime}] ${address} (${IP}) +${PAY_PER_CLICK} STH`);
+    console.log(`[${rollTime}] ${address} (${IP}) + ${PAY_PER_CLICK} STH`);
     return log;
 };
 
