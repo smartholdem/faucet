@@ -17,12 +17,13 @@ var doPayout = (threshold, fee, passphrase, secondPassphrase) => {
         var options = { secondPassphrase: secondPassphrase, vendorField: 'devfaucet.smartholdem.io' };
 
         var addrs = balances.map((bal) => bal.address);
-        console.log('addrs:'+addrs);
+
         var txs = balances.map((bal) => {
             var payout = new BigNumber(bal.pending).times(100000000); //convert to satoshis
             var txFee = new BigNumber(fee).times(100000000);
             payout = payout.minus(txFee);
 
+            console.log(passphrase, bal.address, payout.toNumber(), options);
             var tx = smartholdemApi.createTransaction(passphrase, bal.address, payout.toNumber(), options);
             console.log("tx:"+tx);
             var logMsg = bal.address + " " + parseFloat(bal.pending) + " " + tx.id;
