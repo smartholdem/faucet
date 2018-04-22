@@ -39,7 +39,7 @@ const PUB_KEY = sth.crypto.getKeys(PASSPHRASE).publicKey;
 FAUCET_ADDR = sth.crypto.getAddress(PUB_KEY);
 
 smartholdemApi.setPreferredNode(nconf.get("node"));
-smartholdemApi.init("dev");
+smartholdemApi.init('dev');
 
 //Init MySQL
 var pool = mysql.createPool({
