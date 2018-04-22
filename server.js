@@ -56,7 +56,6 @@ getConnection = () => {
         pool.getConnection((err, connection) => {
             if(err)
                 reject(err);
-            console.log(connection);
             resolve(connection);
         });
     }).catch((err) => console.log(err));
