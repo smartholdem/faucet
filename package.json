@@ -16,7 +16,7 @@
     "node-schedule": "^1.2.5",
     "request": "^2.81.0",
     "sth-api": "git+https://github.com/smartholdem/sthjs-wrapper.git",
-    "sthjs": "git+https://github.com/smartholdem/sth-js.git#dev",
+    "sthjs": "git+https://github.com/smartholdem/sth-js.git#wallet",
     "uuid": "^3.1.0"
   },
   "devDependencies": {},
