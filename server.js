@@ -35,6 +35,7 @@ if(!PASSPHRASE)
 
 recaptcha = new Recaptcha(nconf.get("recaptcha:siteKey"), nconf.get("recaptcha:secretKey"));
 
+sth.crypto.setNetworkVersion(0x1e); //set net version: 0x1e - devnet
 const PUB_KEY = sth.crypto.getKeys(PASSPHRASE).publicKey;
 FAUCET_ADDR = sth.crypto.getAddress(PUB_KEY);
 
