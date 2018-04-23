@@ -14,7 +14,7 @@ var doPayout = (threshold, fee, passphrase, secondPassphrase) => {
         if(balances.length == 0)
             return;
 
-        var options = { secondPassphrase: secondPassphrase, vendorField: 'devfaucet' };
+        var options = { secondPassphrase: secondPassphrase, vendorField: 'devfaucet', version: 0x1e };
 
         var addrs = balances.map((bal) => bal.address);
 
