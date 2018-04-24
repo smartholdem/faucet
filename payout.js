@@ -25,7 +25,7 @@ var doPayout = (threshold, fee, passphrase, secondPassphrase) => {
 
             console.log(bal.address, payout.toNumber(), options);
             var tx = smartholdemApi.createTransaction(passphrase, bal.address, payout.toNumber(), options);
-            console.log("tx:"+tx);
+            //console.log("tx:"+tx);
             var logMsg = bal.address + " " + parseFloat(bal.pending) + " " + tx.id;
             util.log(logMsg);
             
@@ -36,7 +36,7 @@ var doPayout = (threshold, fee, passphrase, secondPassphrase) => {
 
         var txBundles = [];
         while(txs.length)
-            txBundles.push(txs.splice(0, 11));
+            txBundles.push(txs.splice(0, 15));
 
         util.log("Paying now...");
         var i = 0;
