@@ -36,7 +36,7 @@ var doPayout = (threshold, fee, passphrase, secondPassphrase) => {
 
         var txBundles = [];
         while(txs.length)
-            txBundles.push(txs.splice(0, 10));
+            txBundles.push(txs.splice(0, 11));
 
         util.log("Paying now...");
         var i = 0;
