@@ -73,7 +73,7 @@ sudo service nginx restart
 server {
     listen 80;
     listen [::]:80;
-    server_name faucet.smartholdem.io;
+    server_name examplesite.com;
 
     location / {
     proxy_pass http://localhost:8082;
