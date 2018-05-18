@@ -20,12 +20,31 @@ file config.json
 - recaptcha:secretKey - ReCaptcha secret key https://www.google.com/recaptcha/admin?hl=ru
 
 ## Installation
+
 ```shell
+
 sudo apt-get install mysql-server
 sudo apt-get install mysql-client
 
-create mysqldb name faucet
-import mysql from /DataModel/db.sql
+```
+
+## Create mysqldb name faucet
+
+```shell
+
+mysql -u root -p
+CREATE DATABASE faucet;
+SHOW DATABASES;
+exit
+
+```
+
+### Import mysql from /DataModel/db.sql
+
+```shell
+
+shell> mysql -u username -p faucet < /home/<user>/faucet/DataModel/db.sql
+
 ```
 
 ```shell
