@@ -1,5 +1,5 @@
 var repo = require("./api/repos/faucetRepo");
-var smartholdemApi = require("sth-api");
+var smartholdemApi = require("sthjs-wrapper");
 var moment = require("moment");
 var BigNumber = require("bignumber.js");
 var scheduler = require("node-schedule");

@@ -1,7 +1,7 @@
 "use strict";
 var repo = require("../repos/faucetRepo");
 var logRepo = require("../repos/logRepo");
-var smartholdemApi = require("sth-api");
+var smartholdemApi = require("sthjs-wrapper");
 var moment = require("moment");
 var util = require("../util");
 

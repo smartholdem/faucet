@@ -1,5 +1,5 @@
 var fs = require("fs");
-var smartholdemApi = require("sth-api");
+var smartholdemApi = require("sthjs-wrapper");
 var sth = require("sthjs");
 var express = require("express");
 var cookieParser = require("cookie-parser");
