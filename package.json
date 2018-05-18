@@ -4,9 +4,9 @@
   "description": "SmartHoldem Faucet",
   "main": "index.js",
   "dependencies": {
-    "bcrypt": "^1.0.2",
+    "bcrypt": "^2.0.1",
     "bignumber.js": "^4.0.2",
-    "body-parser": "^1.17.2",
+    "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
     "express": "^4.15.3",
     "express-recaptcha": "^3.0.0",
@@ -14,7 +14,7 @@
     "mysql": "^2.13.0",
     "nconf": "^0.8.5",
     "node-schedule": "^1.2.5",
-    "request": "^2.81.0",
+    "request": "^2.86.0",
     "sthjs": "git+https://github.com/smartholdem/sth-js.git",
     "sthjs-wrapper": "^0.1.5",
     "uuid": "^3.1.0"
