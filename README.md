@@ -43,7 +43,7 @@ exit
 
 ```shell
 
-shell> mysql -u username -p faucet < /home/<user>/faucet/DataModel/db.sql
+mysql -u username -p faucet < /home/<user>/faucet/DataModel/db.sql
 
 ```
 
