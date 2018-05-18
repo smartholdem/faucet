@@ -23,9 +23,10 @@ file config.json
 ```shell
 sudo apt-get install mysql-server
 sudo apt-get install mysql-client
+
+create mysqldb name *faucet*
+import mysql from /DataModel/db.sql
 ```
-> create mysqldb name *faucet*
-> import mysql from /DataModel/db.sql
 
 ```shell
 git clone https://github.com/smartholdem/faucet.git
