@@ -55,6 +55,15 @@ node server --pass "Your Faucet Address Passphrase" or forever start server.js -
 ```
 open http://server_ip:8082
 
+## Install nginx
+
+```shell
+
+sudo apt-get update
+sudo apt-get install nginx
+
+```
+
 ## Nginx config example
 
 ```shell
