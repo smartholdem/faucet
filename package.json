@@ -15,8 +15,8 @@
     "nconf": "^0.8.5",
     "node-schedule": "^1.2.5",
     "request": "^2.81.0",
-    "sth-api": "git+https://github.com/smartholdem/sthjs-wrapper.git",
     "sthjs": "git+https://github.com/smartholdem/sth-js.git",
+    "sthjs-wrapper": "^0.1.5",
     "uuid": "^3.1.0"
   },
   "devDependencies": {},
