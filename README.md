@@ -62,7 +62,7 @@ open http://server_ip:8082
 sudo apt-get update
 sudo apt-get install nginx
 
-nano /etc/nginx/sites-available/faucet
+nano /etc/nginx/sites-available/default
 sudo ln -s /etc/nginx/sites-available/faucet /etc/nginx/sites-enabled/
 sudo service nginx restart
 ```
@@ -71,8 +71,8 @@ sudo service nginx restart
 
 ```shell
 server {
-    listen 80 default_server;
-    listen [::]:80 default_server;
+    listen 80;
+    listen [::]:80;
     server_name faucet.smartholdem.io;
 
     location / {
