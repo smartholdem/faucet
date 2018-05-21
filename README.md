@@ -62,7 +62,7 @@ open http://server_ip:8082
 sudo apt-get update
 sudo apt-get install nginx
 
-nano /etc/nginx/sites-available/default
+nano /etc/nginx/sites-available/faucet
 sudo ln -s /etc/nginx/sites-available/faucet /etc/nginx/sites-enabled/
 sudo service nginx restart
 ```
