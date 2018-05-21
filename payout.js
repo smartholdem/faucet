@@ -23,7 +23,7 @@ var doPayout = (threshold, fee, passphrase, secondPassphrase) => {
             payout = payout.minus(txFee);
 
             var tx = smartholdemApi.createTransaction(passphrase, bal.address, payout.toNumber(), options);
-            console.log(tx);
+            console.log("tx:",tx);
             var logMsg = bal.address + " " + parseFloat(bal.pending) + " " + tx.id;
             util.log(logMsg);
             
