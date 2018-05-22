@@ -37,6 +37,7 @@ recaptcha = new Recaptcha(nconf.get("recaptcha:siteKey"), nconf.get("recaptcha:s
 
 sth.crypto.setNetworkVersion(0x1e); //set net version: 0x1e - devnet
 const PUB_KEY = sth.crypto.getKeys(PASSPHRASE).publicKey;
+console.log('PUB_KEY:',PUB_KEY);
 FAUCET_ADDR = sth.crypto.getAddress(PUB_KEY);
 
 smartholdemApi.setPreferredNode(nconf.get("node"));
