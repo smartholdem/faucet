@@ -16,7 +16,11 @@ exports.reject = (res, status, msg) => {
 
 exports.isAddress = (addr) => {
     // return alphanumRegex.test(addr); // && addr.length == 34 && addr.charAt(0) == 'S'
-    return addr;
+    if (addr.length == 34 && addr.charAt(0) === 'D') {
+        return addr;
+    } else {
+        return false;
+    }
 };
 
 exports.log = (msg, async) => {
