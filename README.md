@@ -16,8 +16,8 @@ file config.json
 - log - Filename of log file
 - database:username - MySQL username
 - database:password - MySQL password
-- recaptcha:siteKey - ReCaptcha site key https://www.google.com/recaptcha/admin?hl=ru
-- recaptcha:secretKey - ReCaptcha secret key https://www.google.com/recaptcha/admin?hl=ru
+- recaptcha:siteKey - ReCaptcha site key https://www.google.com/recaptcha/admin
+- recaptcha:secretKey - ReCaptcha secret key https://www.google.com/recaptcha/admin
 
 ## Installation
 
